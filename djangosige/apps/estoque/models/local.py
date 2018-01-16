@@ -24,9 +24,9 @@ class LocalEstoque(models.Model):
         Produto, through='estoque.ProdutoEstocado')
 
     class Meta:
-        verbose_name = "Local de Estoque"
+        verbose_name = "Local de Inventario"
         permissions = (
-            ("view_localestoque", "Can view local estoque"),
+            ("view_localestoque", "Puede ver local de inventario"),
         )
 
     def __unicode__(self):
