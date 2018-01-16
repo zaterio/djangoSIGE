@@ -14,14 +14,12 @@ locale.setlocale(locale.LC_ALL, '')
 TIPOS_MOVIMENTO_ENTRADA = (
     (u'0', u'Ajuste'),
     (u'1', u'Entrada por pedido de compra'),
-    (u'2', u'Entrada por importação de nota fiscal de fornecedor'),
-    (u'3', u'Ajuste inicial'),
+    (u'2', u'Ajuste inicial'),
 )
 
 TIPOS_MOVIMENTO_SAIDA = (
     (u'0', u'Ajuste'),
     (u'1', u'Saída por pedido de venda'),
-    (u'2', u'Saída por importação de nota fiscal'),
 )
 
 
