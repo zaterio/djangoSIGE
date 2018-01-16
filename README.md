@@ -4,6 +4,10 @@ Sistema Integrado de Gestión Empresarial basado en Django
 
 Proyecto independiente open-source desarrolado en Python 3
 
+## Chile
+
+Versión para utilizar en Chile, incluyendo modelo tributario Chileno (IVA)
+
 ## Dependencias
 
 - [django](http://www.djangoproject.com) == 1.10.1
