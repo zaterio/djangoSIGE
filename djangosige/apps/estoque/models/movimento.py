@@ -40,7 +40,7 @@ class ItensMovimento(models.Model):
             if self.produto.controlar_estoque and self.produto.estoque_atual:
                 return self.produto.estoque_atual
             else:
-                return 'Não controlado'
+                return 'No controlado'
 
     def format_estoque_atual_produto(self):
         estoque_atual = self.get_estoque_atual_produto()
@@ -59,10 +59,10 @@ class MovimentoEstoque(models.Model):
     observacoes = models.CharField(max_length=1055, null=True, blank=True)
 
     class Meta:
-        verbose_name = "Movimento de Estoque"
+        verbose_name = "Movimento de Inventario"
         permissions = (
-            ("view_movimentoestoque", "Can view movimento estoque"),
-            ("consultar_estoque", "Pode consultar estoque"),
+            ("view_movimentoestoque", "Puede ver movimiento de stock"),
+            ("consultar_estoque", "Puede consultar stock"),
         )
 
     @property
@@ -118,4 +118,4 @@ class TransferenciaEstoque(MovimentoEstoque):
         return reverse_lazy('estoque:detalhartransferenciaestoqueview', kwargs={'pk': self.id})
 
     def get_tipo(self):
-        return 'Transferência'
+        return 'Transferencia'
